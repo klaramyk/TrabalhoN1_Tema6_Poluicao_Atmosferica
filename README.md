@@ -1,6 +1,6 @@
 # TrabalhoN1_Tema6_Poluicao_Atmosferica
 
-Grupo: Clara (Líder), Letícia Vitória e Gabriela
+Grupo: Clara (Líder), Letícia Vitória, Gabriela e Lara
 
 Eixo: Poluição Atmosférica
 
