@@ -7,18 +7,40 @@ Discente: Clara Medeiros
 
 Eixo temático: Poluição Atmosférica
 
-Tema: Análise de dados da qualidade do ar através dos índices de poluentes para identificação das possíveis fontes de emissão.
+Tema: Análise de dados da qualidade do ar através dos índices de poluentes
+para identificação das possíveis fontes de emissão.
 
-Recorte do problema: A poluição atmosférica é um desafio mundial que afeta diretamente a saúde humana, o meio ambiente e a economia. Um dos principais problemas está na identificação das fontes de emissão de poluentes atmosféricos em áreas urbanas densamente povoadas, como Natal. Com isto em mente, como objetivo do trabalho temos a análise de dados utilizando índices de poluentes atmosféricos (dióxido de enxofre, óxidos de nitrogênio, partículas em suspensão e compostos orgânicos voláteis) para a identificação das possíveis fontes de emissão (como setores de transporte e indústria).
+Recorte do problema: A poluição atmosférica é um desafio mundial que afeta diretamente
+a saúde humana, o meio ambiente e a economia. Um dos principais problemas está na identificação
+das fontes de emissão de poluentes atmosféricos em áreas urbanas densamente povoadas, como Natal.
+Com isto em mente, como objetivo do trabalho temos a análise de dados utilizando índices de poluentes
+atmosféricos (dióxido de enxofre, óxidos de nitrogênio, partículas em suspensão e compostos orgânicos
+voláteis) para a identificação das possíveis fontes de emissão (como setores de transporte e indústria).
 
-Objetivo: Calcular as médias diárias de determinados poluentes para dados da estação de coleta em Suape/PE, Janeiro/2022
+Objetivo: Calcular as médias diárias de determinados poluentes para dados da estação de coleta em
+Suape/PE, Janeiro/2022
 
 Código:
-Utilizando dados reais, o arquivo de dados de leitura da estação de Suape precisou de tratamento prévio antes de ser usada no programa. As informações escolhidas foram "data, hora, poluente, valor e unidade". O arquivo de dados foi adicionado ao GitHub para auxiliar este e demais códigos do grupo.
+Utilizando dados reais, o arquivo de dados de leitura da estação de Suape precisou de tratamento
+prévio antes de ser usada no programa. As informações escolhidas foram "data, hora, poluente, valor
+e unidade". O arquivo de dados foi adicionado ao GitHub para auxiliar este e demais códigos do grupo.
 
-O algoritmo inicia lendo cada uma das linhas do arquivo de dados, criando dicionários para dados e unidades. Dados para armazenar valores dos poluentes (data: valor) e unidades para armazenar a unidade de medida dos dados coletados. Após, o programa itera sobre o arquivo para definir a posição dos dados necessários para o cálculo das médias (data, poluente, valor e unidade). O laço surge para verificar se o poluente está dentro de dados. Se não estiver contido, ele adiciona o poluente e o valor na lista dentro do dicionário. Se estiver contido, ele verifica se já existe a data dentro dos dados de poluente. Se não estiver contido, ele adiciona o valor em uma nova lista dentro do poluente. Se estiver contido, ele apenas adiciona o novo valor no final da lista existente.
+O algoritmo inicia lendo cada uma das linhas do arquivo de dados, criando dicionários para dados e unidades.
+Dados para armazenar valores dos poluentes (data: valor) e unidades para armazenar a unidade de medida dos
+dados coletados. Após, o programa itera sobre o arquivo para definir a posição dos dados necessários para
+o cálculo das médias (data, poluente, valor e unidade). O laço surge para verificar se o poluente está
+dentro de dados. Se não estiver contido, ele adiciona o poluente e o valor na lista dentro do dicionário.
+Se estiver contido, ele verifica se já existe a data dentro dos dados de poluente. Se não estiver contido,
+ele adiciona o valor em uma nova lista dentro do poluente. Se estiver contido, ele apenas adiciona o novo
+valor no final da lista existente.
 
-Em seguida, é criada uma variável onde será exibido todas as chaves do dicionário poluentes como um índice. Neste momento, o código exibe na tela de boas-vindas ao usuário o nome do algoritmo, as informações de coleta e período de referência. Depois exibe a lista de índices, para que usuário escolha de qual poluente (ou todos) ele quer ver a média diária. Por fim, para exibir a resposta, o programa primeiro verificará se a entrada de dados do usuário combina com alguma opção da lista de índices exibida. Se não, o programa mostrará uma mensagem de erro. Se sim, dependendo do poluente escolhido, é exibido a lista de médias diárias para o poluente com data, valor e unidade.
+Em seguida, é criada uma variável onde será exibido todas as chaves do dicionário poluentes como um índice.
+Neste momento, o código exibe na tela de boas-vindas ao usuário o nome do algoritmo, as informações de coleta
+e período de referência. Depois exibe a lista de índices, para que usuário escolha de qual poluente (ou todos)
+ele quer ver a média diária. Por fim, para exibir a resposta, o programa primeiro verificará se a entrada de
+dados do usuário combina com alguma opção da lista de índices exibida. Se não, o programa mostrará uma
+mensagem de erro. Se sim, dependendo do poluente escolhido, é exibido a lista de médias diárias para o
+poluente com data, valor e unidade.
 
 Referências utilizadas:
 Plataforma de Qualidade do Ar - IEMA
